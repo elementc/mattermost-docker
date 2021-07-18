@@ -1,4 +1,4 @@
-FROM postgres:9.4-alpine
+FROM postgres:10-alpine
 
 # Healthcheck to make sure container is ready
 HEALTHCHECK CMD pg_isready -U $POSTGRES_USER -d $POSTGRES_DB || exit 1
